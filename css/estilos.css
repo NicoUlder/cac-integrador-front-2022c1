@@ -1,3 +1,27 @@
 * {
-    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-titulo {
+    float: left;
+    display: block;
+    margin: auto;
+}
+
+.logo-titulo img {
+    max-width: 25%;
+    max-height: 100%;
+}
+
+.conferencia {
+    float: left;
+    display: block;
+    width: 20%;
+    max-height: 100%;
+    color: whitesmoke;
+}
+
+.conferencia h3 {
+    text-align: left;
 }
