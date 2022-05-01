@@ -4,9 +4,8 @@
 }
 
 .logo-titulo {
-    float: left;
-    display: block;
-    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .logo-titulo img {
@@ -14,14 +13,6 @@
     max-height: 100%;
 }
 
-.conferencia {
-    float: left;
-    display: block;
-    width: 20%;
-    max-height: 100%;
+.logo-titulo h3 {
     color: whitesmoke;
-}
-
-.conferencia h3 {
-    text-align: left;
 }
