@@ -16,3 +16,37 @@
 .logo-titulo h3 {
     color: whitesmoke;
 }
+
+.footer {
+    background-color: rgb(38, 75, 117);
+}
+
+.footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer li {
+    border-top: 0 none;
+}
+
+.footer li a {
+    color: whitesmoke;
+}
+
+.list-group-item-mine {
+    background-color: rgb(38, 75, 117);
+}
+
+.col-5 img {
+    max-height: 50vw;
+}
+
+.col-7 {
+    padding-top: 20px;
+    max-height: 50vw;
+}
+
+.row h1, h4 {
+    text-align: right;
+}
