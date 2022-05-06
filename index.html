@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Conf Bs As</title>
 </head>
@@ -32,41 +31,99 @@
                     <a class="nav-link" href="#">Conviértete en orador</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Comprar tickets</a>
+                    <a class="nav-link" style="color: green" href="#">Comprar tickets</a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="container-fluid container-sm bg-dark text-white">
-        <div class="row has-bg-img">
+    <div class="has-bg-img">
+        <div class="row-fluid">
             <h1>Conf Bs As</h1>
-            <h4>Llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</h4>
-            <button type="button" class="btn btn-outline-light btn-md mr-2">Quiero ser orador</button>    
+            <h6>Llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</h6>
+            <button type="button" class="btn btn-outline-light btn-md mr-2">Quiero ser orador</button>
             <button type="button" class="btn btn-success btn-md">Comprar Tickets</button>
-            <img src="img/ba2.jpg" class="img-fluid w-100" alt="Conf Bs As">
+            <img src="img/ba2.jpg" class="w-100" alt="Conf Bs As">
         </div>
     </div>
-    <div class="container-fluid">
-        <h1>Oradores</h1>
+    <div class="container conf-apply orador">
+        <p>
+            <h6>CONOCE A LOS</h6>
+            <h1>ORADORES</h1>
+        </p>
     </div>
-    <div class="row">
+    <div class="container mt-2">
+        <div class="row oradores">
+            <div class="col-sm-4">
+                <img src="img/Elon_Musk.jpg" alt="Elon Musk">
+                <div class="pt-4 pb-4">
+                    <button type="button" class="btn btn-dark btn-sm">StarLink</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Tesla</button>
+                </div>
+                <div class="espacio">
+                    <h4>Elon Musk</h4>
+                    <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/steve.jpg" alt="Steve Jobs">
+                <div class="pt-4 pb-4">
+                    <button type="button" class="btn btn-warning btn-sm">iOS</button>
+                    <button type="button" class="btn btn-info btn-sm">Desarrollo</button>
+                </div>
+                <h4>Steve Jobs</h4>
+                <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/bill.jpg" alt="Bill Gates">
+                <div class="pt-4 pb-4">
+                    <button type="button" class="btn btn-success btn-sm">Negocios</button>
+                    <button type="button" class="btn btn-danger btn-sm">Startups</button>
+                </div>
+                <h4>Bill Gates</h4>
+                <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row no-gutters">
         <div class="col-5">
             <img src="img/honolulu.jpg" alt="Conf Bs As">
         </div>
-        <div class="col-7 bg-dark text-white">
+        <div class="col-7 pl-3 pt-4 bg-dark text-white">
             <h3>Bs As - Octubre</h3>
             <p>
                 Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la Isla de Oahu, la ciudad y el condado de Honololu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie.)
-            <br>
-            <br>
-            <button type="button" class="btn btn-outline-light btn-md">Comprar Tickets</button></p>
+                <br />
+                <br />
+                <button type="button" class="btn btn-outline-light btn-md">Comprar Tickets</button></p>
         </div>
     </div>
-    <div class="container-fluid">
-        <h1>Suscripción oradores</h1>
+    <div class="container-fluid conf-apply orador pt-4">
+        <p>
+            <h6>CONVIÉRTETE EN UN</h6>
+            <h1>ORADOR</h1>
+        </p>
+        <p>
+            <h5>Anótate como orador para dar una <span class="dotted">charla ignite.</span> Cuéntanos de qué quieres hablar!</h5>
+        </p>
+        <p>
+            <form action="/form/submit" method="get">
+                <input type="text" name="first_name" placeholder="Nombre" class="input-area1 rounded pt-2 pb-2 pl-2" />
+                <input type="text" name="last_name" placeholder="Apellido" class="input-area2 rounded pt-2 pb-2 pl-2" />
+                <br />
+                <br />
+                <textarea name="comment" class="comments-area rounded pt-4">Sobre qué quieres hablar?</textarea>
+                <br />
+                <span class="remember-text">
+                    <small>Recuerda incluir un título para tu charla.</small>
+                </span>
+                <br />
+                <button type="button" class="btn btn-success btn-form">Enviar</button>
+            </form>
+        </p>
     </div>
     <footer class="text-white">
-        <div class="footer p-4">
+        <div class="footer justify-content-center">
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item list-group-item-mine">
                     <a href="#">Preguntas Frecuentes</a>
