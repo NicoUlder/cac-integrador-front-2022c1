@@ -3,32 +3,44 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container-navbar {
-    margin: auto;
-}
-
 .logo-titulo {
     display: flex;
     align-items: center;
 }
 
 .logo-titulo img {
-    max-width: 25%;
+    max-width: 30%;
     max-height: 100%;
 }
 
-.logo-titulo h3 {
+.logo-titulo h5 {
     color: whitesmoke;
-    margin-right: auto;
 }
 
-.oradores img {
-    height: 50%;
-    width: 100%;
+.floater {
+    background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.texto-floater {
+    text-align: right;
+    color: whitesmoke;
+    top: 20%;
+    left: 50%;
 }
 
 .oradores {
     text-align: justify;
+    max-width: auto;
+}
+
+.oradores img {
+    height: 40%;
+    width: 100%;
 }
 
 .col-5 img {
@@ -40,7 +52,7 @@
 }
 
 .dotted {
-    border-bottom: 2px dotted;
+    border-bottom: 0.125rem dotted;
 }
 
 .conf-apply {
@@ -54,33 +66,33 @@
 
 .comments-area {
     width: 80.3%;
-    height: 150px;
-    padding: 10px;
+    height: 9.375rem;
+    padding: 0.625rem;
     outline: 0;
-    border: 1px solid #B5C4CD;
+    border: 0.0625rem solid #B5C4CD;
     color: #879299;
-    line-height: 20px;
-    font-size: 34px;
+    line-height: 1.25rem;
+    font-size: 1.875rem;
 }
 
 .input-area1 {
     width: 40%;
     max-height: auto;
     outline: 0;
-    border: 1px solid #B5C4CD;
+    border: 0.0625rem solid #B5C4CD;
     color: #879299;
-    line-height: 20px;
-    font-size: 16px;
+    line-height: 1.25rem;
+    font-size: 1rem;
 }
 
 .input-area2 {
     width: 40%;
     max-height: auto;
     outline: 0;
-    border: 1px solid #B5C4CD;
+    border: 0.0625rem solid #B5C4CD;
     color: #879299;
-    line-height: 20px;
-    font-size: 16px;
+    line-height: 1.25rem;
+    font-size: 1rem;
 }
 
 .remember-text {
@@ -91,15 +103,13 @@
 .btn-form {
     width: 80.3%;
     background-color: #6DD520;
-    font-size: 20px;
+    font-size: 1.25rem;
     border-style: none;
 }
 
 .footer {
     display: flex;
-    flex-grow: 1;
     background-color: rgb(38, 75, 117);
-
 }
 
 .footer ul {
