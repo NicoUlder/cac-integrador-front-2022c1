@@ -3,112 +3,83 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo-titulo {
-    display: flex;
-    align-items: center;
+@media only screen and (max-width: 575px) {
+    .mobile-100 {
+        height: 100vh;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 6vw;
+        text-align: justify;
+    }
+
+    .mobile-padding {
+        padding: 0;
+    }
+
+    .mobile-buttons {
+        font-size: 5vw;
+    }
+
+    .mobile-bsas {
+        max-height: 100vh !important;
+        object-fit: cover !important;
+    }
 }
 
-.logo-titulo img {
-    max-width: 30%;
-    max-height: 100%;
+@media only screen and (min-width: 992px) {
+    .mobile-lg {
+        height: 122.5vh !important;
+    }
 }
 
-.logo-titulo h5 {
-    color: whitesmoke;
+.h1-color h1 {
+    color: #000000;
+}
+
+#headerimg {
+    background-image: url('../img/ba3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* set to cover to properly scale img */
+    padding-bottom: 56.25%;
+    /* height/width*100 */
 }
 
 .floater {
     background: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.texto-floater {
-    text-align: right;
-    color: whitesmoke;
-    top: 20%;
-    left: 50%;
-}
-
-.oradores {
-    text-align: justify;
-    max-width: auto;
-}
-
-.oradores img {
-    height: 40%;
-    width: 100%;
-}
-
-.col-5 img {
-    max-height: 50vw;
-}
-
-.col-7 {
-    max-height: 50vw;
+    padding-top: 15%;
+    padding-left: 35%;
 }
 
 .dotted {
     border-bottom: 0.125rem dotted;
 }
 
-.conf-apply {
-    text-align: center;
-    color: #695D5D;
-}
-
-.orador h1 {
-    color: #000000;
-}
-
-.comments-area {
-    width: 80.3%;
-    height: 9.375rem;
-    padding: 0.625rem;
-    outline: 0;
-    border: 0.0625rem solid #B5C4CD;
-    color: #879299;
-    line-height: 1.25rem;
-    font-size: 1.875rem;
-}
-
 .input-area1 {
-    width: 40%;
-    max-height: auto;
     outline: 0;
     border: 0.0625rem solid #B5C4CD;
     color: #879299;
-    line-height: 1.25rem;
     font-size: 1rem;
 }
 
 .input-area2 {
-    width: 40%;
-    max-height: auto;
     outline: 0;
     border: 0.0625rem solid #B5C4CD;
     color: #879299;
-    line-height: 1.25rem;
     font-size: 1rem;
 }
 
-.remember-text {
-    display: flex;
-    padding-left: 9.8%;
-}
-
-.btn-form {
-    width: 80.3%;
-    background-color: #6DD520;
-    font-size: 1.25rem;
-    border-style: none;
+.comments-area {
+    outline: 0;
+    border: 0.0625rem solid #B5C4CD;
+    color: #879299;
+    font-size: 1.625rem;
 }
 
 .footer {
-    display: flex;
     background-color: rgb(38, 75, 117);
 }
 
@@ -118,10 +89,7 @@
 
 .footer li {
     border-top: 0 none;
-}
-
-.footer li a {
-    color: whitesmoke;
+    border-style: none;
 }
 
 .list-group-item-mine {

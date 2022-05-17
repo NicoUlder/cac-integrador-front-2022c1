@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Conf Bs As</title>
+    <title>Conf Bs As - 1er Proyecto Web con Bootstrap, Flex y CSS</title>
 </head>
 
 <body>
-    <div class="container-navbar mx-auto">
-        <div class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="logo-titulo bg-dark">
-                <img src="img/codoacodo.png" alt="Codo a Codo">
+    <section class="container-navbar mx-auto">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="d-flex flex-sm-row align-items-sm-center text-white bg-dark pl-5 pr-0">
+                <img src="img/codoacodo.png" class="h-50 w-50" alt="Codo a Codo">
                 <h5>Conf Bs As</h5>
             </div>
             <ul class="nav navbar-nav ml-auto pt-2 pb-3 w-100 justify-content-end">
@@ -31,133 +31,159 @@
                     <a class="nav-link" href="#">Conviértete en orador</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: green" href="#">Comprar tickets</a>
+                    <a class="nav-link text-success" href="#">Comprar tickets</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div>
-        <div class="container-fluid position-relative">
-            <div class="row">
-                <img src="img/ba3.jpg" class="img-fluid" alt="Conf Bs As">
-            </div>
-            <div class="container-fluid position-absolute floater w-100 h-100 text-white">
-                <div class="container-fluid texto-floater position-absolute w-50 pr-5">
+        </nav>
+    </section>
+    <header>
+        <article class="container-fluid position-relative">
+            <section class="row vh-100" id="headerimg">
+                <div class="col-sm-12 mobile-100 mobile-padding mobile-lg floater text-white text-sm-right position-absolute pr-5">
                     <h2>Conf Bs As</h2>
-                    <p>Llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                    <button type="button" class="btn btn-outline-light btn-md mr-2">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success btn-md">Comprar Tickets</button>
+                    <p class="mb-1">Llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti.
+                        Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light btn-sm mobile-buttons mr-2">Quiero ser orador</button>
+                    <button type="button" class="btn btn-success btn-sm mobile-buttons">Comprar Tickets</button>
+            </section>
+            </section>
+        </article>
+    </header>
+    <article>
+        <header class="container-fluid">
+            <div class="row text-center">
+                <div class="col pt-4 text-secondary h1-color">
+                    <h6>CONOCE A LOS</h6>
+                    <h1>ORADORES</h1>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container conf-apply orador">
-        <p>
-            <h6>CONOCE A LOS</h6>
-            <h1>ORADORES</h1>
-        </p>
-    </div>
-    <div class="container mt-2 mb-0">
-        <div class="row oradores">
-            <div class="col-sm-4">
-                <img src="img/Elon_Musk.jpg" class="rounded img-fluid" alt="Elon Musk">
-                <div class="pt-4 pb-3">
-                    <button type="button" class="btn btn-dark btn-sm py-0">StarLink</button>
-                    <button type="button" class="btn btn-secondary btn-sm py-0">Tesla</button>
-                    <h4>Elon Musk</h4>
+        </header>
+        <section class="container-fluid w-75 mt-2 mb-4">
+            <section class="row">
+                <div class="col-sm-4 text-center">
+                    <img src="img/Elon_Musk.jpg" class="rounded img-fluid" alt="Elon Musk">
+                    <div class="pt-4 pb-3">
+                        <button type="button" class="btn btn-dark btn-sm py-0">StarLink</button>
+                        <button type="button" class="btn btn-secondary btn-sm py-0">Tesla</button>
+                        <h4>Elon Musk</h4>
+                    </div>
+                    <section class="col-sm-12 text-justify pl-0 pr-0 pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores natus voluptas laborum sequi sed aliquid nemo culpa iure unde in aliquam, inventore, enim, cupiditate nostrum eligendi officiis labore? Nisi, est?
+                    </section>
                 </div>
-                <div class="container-fluid">
-                    <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores natus voluptas laborum sequi sed aliquid nemo culpa iure unde in aliquam, inventore, enim, cupiditate nostrum eligendi officiis labore? Nisi, est?</p>
+                <section class="col-sm-4 text-center">
+                    <img src="img/steve.jpg" class="rounded img-fluid" alt="Steve Jobs">
+                    <div class="pt-4 pb-3">
+                        <button type="button" class="btn btn-warning btn-sm py-0">iOS</button>
+                        <button type="button" class="btn btn-info btn-sm py-0">Desarrollo</button>
+                        <h4>Steve Jobs</h4>
+                    </div>
+                    <section class="col-sm-12 text-justify pl-0 pr-0 pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, exercitationem! Ullam consequatur at est iusto, error esse placeat ut ab suscipit, dolorum, recusandae. Adipisci neque harum molestiae, necessitatibus dolore natus.
+                    </section>
+                </section>
+                <section class="col-sm-4 text-center">
+                    <img src="img/bill.jpg" class="rounded img-fluid" alt="Bill Gates">
+                    <div class="pt-4 pb-3">
+                        <button type="button" class="btn btn-success btn-sm py-0">C#</button>
+                        <button type="button" class="btn btn-danger btn-sm py-0">Startups</button>
+                        <h4>Bill Gates</h4>
+                    </div>
+                    <section class="col-sm-12 text-justify pl-0 pr-0 pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae accusantium? Sed eum rem aperiam! Natus, quidem doloremque sit blanditiis! Id, mollitia, rerum numquam laboriosam aliquam ullam aut expedita a.
+                    </section>
+                </section>
+            </section>
+        </section>
+    </article>
+    <article>
+        <section class="container-fluid no-gutters">
+            <div class="row">
+                <div class="col-sm-5 pl-0 ml-0 pr-0">
+                    <img src="img/ba1.jpg" class="mobile-bsas w-100 h-100" alt="Conf Bs As">
+                </div>
+                <div class="col-sm-7 pl-3 pt-4 pb-5 bg-dark text-white text-justify">
+                    <h3>Bs As - Octubre</h3>
+                    <p>
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la Isla de Oahu, la ciudad y el condado de Honololu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie.)
+                    </p>
+                    <p>
+                        <button type="button" class="btn btn-outline-light btn-md">Comprar Tickets</button>
+                    </p>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <img src="img/steve.jpg" class="rounded img-fluid" alt="Steve Jobs">
-                <div class="pt-4 pb-3">
-                    <button type="button" class="btn btn-warning btn-sm py-0">iOS</button>
-                    <button type="button" class="btn btn-info btn-sm py-0">Desarrollo</button>
-                    <h4>Steve Jobs</h4>
-                </div>
-                <div class="container-fluid">
-                    <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, exercitationem! Ullam consequatur at est iusto, error esse placeat ut ab suscipit, dolorum, recusandae. Adipisci neque harum molestiae, necessitatibus dolore natus.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/bill.jpg" class="rounded img-fluid" alt="Bill Gates">
-                <div class="pt-4 pb-3">
-                    <button type="button" class="btn btn-success btn-sm py-0">Negocios</button>
-                    <button type="button" class="btn btn-danger btn-sm py-0">Startups</button>
-                    <h4>Bill Gates</h4>
-                </div>
-                <div class="container-fluid">
-                    <p class="oradores">Lorem ipsum dolor sit amet, consectetur adipisicing elit... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae accusantium? Sed eum rem aperiam! Natus, quidem doloremque sit blanditiis! Id, mollitia, rerum numquam laboriosam aliquam ullam aut expedita a.</p>
+        </section>
+    </article>
+    <article>
+        <header class="container text-center text-secondary h1-color pt-3">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6>CONVIÉRTETE EN UN</h6>
+                    <h1>ORADOR</h1>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="row no-gutters">
-        <div class="col-5">
-            <img src="img/honolulu.jpg" alt="Conf Bs As">
-        </div>
-        <div class="col-7 pl-3 pt-4 bg-dark text-white">
-            <h3>Bs As - Octubre</h3>
-            <p>
-                Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la Isla de Oahu, la ciudad y el condado de Honololu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie.)
-                <br/>
-                <br/>
-                <button type="button" class="btn btn-outline-light btn-md">Comprar Tickets</button></p>
-        </div>
-    </div>
-    <div class="container-fluid conf-apply orador pt-3">
-        <p>
-            <h6>CONVIÉRTETE EN UN</h6>
-            <h1>ORADOR</h1>
-        </p>
-        <p>
-            <h5>Anótate como orador para dar una <span class="dotted">charla ignite.</span> Cuéntanos de qué quieres hablar!</h5>
-        </p>
-        <p>
-            <form action="/form/submit" method="get">
-                <input type="text" name="first_name" placeholder="Nombre" class="input-area1 rounded pt-2 pb-2 pl-2"/>
-                <input type="text" name="last_name" placeholder="Apellido" class="input-area2 rounded pt-2 pb-2 pl-2"/>
-                <br />
-                <br />
-                <textarea name="comment" class="comments-area rounded pt-4">Sobre qué quieres hablar?</textarea>
-                <br />
-                <span class="remember-text">
-                    <small>Recuerda incluir un título para tu charla.</small>
-                </span>
-                <br />
-                <button type="button" class="btn btn-success btn-form">Enviar</button>
-            </form>
-        </p>
-    </div>
-    <footer class="text-white">
-        <div class="footer justify-content-center">
-            <ul class="list-group list-group-horizontal">
+            <div class="row pb-2">
+                <div class="col-sm-12">
+                    <h5>Anótate como orador para dar una <span class="dotted">charla ignite.</span> Cuéntanos de qué quieres hablar!</h5>
+                </div>
+            </div>
+        </header>
+        <section class="container pt-0">
+            <section class="row justify-content-center">
+                <div class="col-xs-12 col-sm-5">
+                    <div class="form-group">
+                        <input type="text" name="first_name" placeholder="Nombre" class="form-control input-sm input-area1 rounded pt-1 pb-1 pl-2 mr-3 mb-3" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="form-group">
+                        <input type="text" name="last_name" placeholder="Apellido" class="form-control input-sm input-area2 rounded pt-1 pb-1 pl-2" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10">
+                    <div class="form-group mb-0">
+                        <textarea name="comment" class="form-control input-sm comments-area rounded pt-2 pl-3">Sobre qué quieres hablar?</textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10">
+                    <div class="form-group">
+                        <small>Recuerda incluir un título para tu charla.</small>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-lg btn-success btn-block">Enviar</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </article>
+    <footer>
+        <nav class="footer text-white pb-4">
+            <ul class="d-flex flex-sm-row list-group">
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#" class="text-white">Preguntas Frecuentes</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Contáctanos</a>
+                    <a href="#" class="text-white">Contáctanos</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Prensa</a>
+                    <a href="#" class="text-white">Prensa</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Conferencias</a>
+                    <a href="#" class="text-white">Conferencias</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Términos y condiciones</a>
+                    <a href="#" class="text-white">Términos y condiciones</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Privacidad</a>
+                    <a href="#" class="text-white">Privacidad</a>
                 </li>
                 <li class="list-group-item list-group-item-mine">
-                    <a href="#">Estudiantes</a>
+                    <a href="#" class="text-white">Estudiantes</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </footer>
 </body>
 
